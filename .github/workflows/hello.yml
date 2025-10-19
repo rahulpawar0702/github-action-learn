@@ -1,0 +1,12 @@
+name: My First Workflow
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, GitHub Actions!"
+      - name: List files
+        run: ls -la
